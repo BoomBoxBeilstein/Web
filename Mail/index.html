@@ -41,58 +41,31 @@
 
 <div class="container ">
 
-<!--
-  <form>
-    <div class="form-group">
 
-      <input type="name" class="form-control" id="inputName" placeholder="Name (Optional)">
+  <form name="Mail-ins-Studio" method="POST" data-netlify="true">>
+    <div class="form-group">
+      <input type="name" name="name" class="form-control" placeholder="Name (Optional)">
     </div>
     <div class="form-group">
-
-
-      <input type="email" class="form-control" id="inputEmail" placeholder="name@example.com">
+      <input type="email" name="email" class="form-control" placeholder="name@example.com">
     </div>
     <div class="form-group">
-
-      <select class="form-control" id="inputArt">
-        <option>Liedwunsch</option>
-        <option>Nachricht</option>
-        <option>Problem</option>
-
+      <select class="form-control" name="type">
+        <option value="Liedwunsch">Liedwunsch</option>
+        <option value="Nachricht">Nachricht</option>
+        <option value="Problem">Problem</option>
       </select>
     </div>
 
     <div class="form-group">
+      <textarea class="form-control" name="Nachricht" rows="5" placeholder="Deine Nachricht"></textarea>
 
-      <textarea class="form-control" id="inputNachrivht" rows="5" placeholder="Deine Nachricht"></textarea>
-
-      <button onclick="myfunction()"  type="submit" value="Submit"class="btn btn-primary">Senden</button>
+      <button type="submit" value="Submit"class="btn btn-primary">Senden</button>
     </div>
   </form>
 </div>
-</div>
--->
 
-<form name="contact" method="POST" data-netlify="true">
-  <p>
-    <label>Your Name: <input type="text" name="name" /></label>
-  </p>
-  <p>
-    <label>Your Email: <input type="email" name="email" /></label>
-  </p>
-  <p>
-    <label>Your Role: <select name="role[]" multiple>
-      <option value="leader">Leader</option>
-      <option value="follower">Follower</option>
-    </select></label>
-  </p>
-  <p>
-    <label>Message: <textarea name="message"></textarea></label>
-  </p>
-  <p>
-    <button type="submit">Send</button>
-  </p>
-</form>
+</div>
 </div>
 
 <script>
